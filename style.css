@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    user-select: none;
+    border: none;
+    outline: 2px solid black;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* .details{
+    display: grid;
+} */
+
+.enter{
+    display: flex;
+    justify-content: space-around;
+    /* position: relative; */
+    margin: 50px;
+}
+
+.enter input{
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px 0;
+    border-radius: 100px;
+    /* position: relative; */
+}
+
+.enter div{
+    position: relative;
+    width: 30%;
+}
+
+.enter label{
+    position: absolute;
+    left: 40px;
+    background-color: #ffffff;
+    /* z-index: 1; */
+    font-size: 19px;
+    padding: 5px;
+    top: -5px;
+}
+
+
+@media (max-width:1600px){
+    .enter{
+        flex-direction: column;
+    }
+    .enter div{
+        width: 100%;
+
+    }
+}
+
+.button{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.button button{
+    height: 40px;
+    width: 12%;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: lighter;
+}
+.button button:last-child{
+    display: none;
+}
+.button button:hover, .button button:focus{
+    background-color: #887f7f;
+    color: #ffffff;
+    
+    user-select: none;
+    outline: none;
+
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.table table{
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+.table thead tr{
+    font-size: large;
+    font-weight: bold;
+}
+
+.table td{
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+.table tbody tr td button{
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.table tbody tr td button:hover, .table tbody tr td button:focus{
+    background-color: #887f7f;
+    color: #ffffff;
+    outline: none;
+}
